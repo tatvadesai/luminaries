@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
+}
+
+.container {
+    padding: 15px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#luminary-list-container {
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#luminary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#luminary-list li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#luminary-list li:last-child {
+    border-bottom: none;
+}
+
+.luminary-name {
+    flex-grow: 1;
+    color: #555;
+}
+
+.luminary-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 8px;
+    color: #007bff; /* Primary blue for actions */
+    padding: 4px 6px;
+    border-radius: 3px;
+}
+
+.luminary-actions button:hover {
+    background-color: #e9ecef;
+}
+
+.luminary-actions .delete-btn {
+    color: #dc3545; /* Red for delete */
+}
+
+#empty-state {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#clear-all-btn {
+    background-color: #6c757d; /* Grey for secondary action */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-right: 8px; /* Add some margin between buttons */
+}
+
+#clear-all-btn:hover {
+    background-color: #5a6268;
+}
+
+#export-csv-btn {
+    background-color: #007bff; /* Blue for primary action */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#export-csv-btn:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
