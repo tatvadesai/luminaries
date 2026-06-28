@@ -11,7 +11,7 @@ I built this because I research people constantly — founders, investors, autho
 ## How it works
 
 1. **Highlight** a person's name anywhere on the web
-2. **Right-click** → *"Research '[name]' with Perplexity"*
+2. **Right-click** → *"Dive Deeper on '[name]' with Luminaries"*
 3. A new tab opens with a pre-structured Perplexity query that returns:
    - Who they are and their current role
    - Career history and notable achievements
