@@ -19,7 +19,14 @@ I built this because I research people constantly — founders, investors, autho
    - Reputation and impact in their field
    - Verified links: LinkedIn, Twitter/X, YouTube, personal site
 
-The name is simultaneously saved to your **Luminaries Log** — click the toolbar icon to see everyone you've researched, copy a name, delete entries, or clear the list.
+The name is simultaneously saved to your **Luminaries Log** — click the toolbar icon to see everyone you've researched. From the popup you can:
+
+- **Search** your saved luminaries
+- **Click a name** to re-research them on Perplexity
+- **Add notes** to any luminary (click "+ note")
+- **Copy** a name to clipboard (with visual confirmation)
+- **Delete** individual entries or clear the whole list
+- **Export** to CSV (includes name, date, and notes)
 
 ## Why pre-prompting matters
 
@@ -49,13 +56,15 @@ Deliberately minimal — Manifest V3, vanilla JS, no build step:
 |---|---|
 | `manifest.json` | MV3 config: context menu + local storage permissions |
 | `background.js` | Service worker: registers the menu, builds the Perplexity URL, saves the name |
-| `popup.html/js/css` | The Luminaries Log: list, copy, delete, clear-all |
-| `SPEC.md` | Full product spec the extension was built from |
+| `popup.html/js/css` | The Luminaries Log: list, search, notes, copy, delete, clear-all, CSV export |
 
 ## Ideas / roadmap
 
-- [ ] One-click export of the log to CSV (for building contact lists)
-- [ ] Per-name notes in the popup
+- [x] One-click export of the log to CSV (for building contact lists)
+- [x] Per-name notes in the popup
+- [x] Search/filter luminaries in the popup
+- [x] Re-research from popup (click a name)
+- [x] Timestamps and visual copy feedback
 - [ ] Configurable prompt templates (investor mode, hiring mode, journalist mode)
 - [ ] Optional Claude / ChatGPT as alternate research engines
 

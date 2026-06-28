@@ -5,8 +5,7 @@
   "description": "Research individuals with Perplexity and save their names.",
   "permissions": [
     "contextMenus",
-    "storage",
-    "activeTab"
+    "storage"
   ],
   "background": {
     "service_worker": "background.js"
